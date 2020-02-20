@@ -1,0 +1,30 @@
+<h1>Add Numbers</h1>
+<%= form_for :post, url: posts_path do |f| %>
+    <p> 
+        <%= f.label :full_name %><br>
+        <%= f.text_field(:full_name, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p>
+    <p>
+        <%= f.label :address %><br>
+        <%= f.text_field(:address, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p>
+    <p> 
+        <%= f.label :dob %><br>
+        <%= f.text_field(:dob, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p>
+    <p>
+        <%= f.label :contact_no %><br>
+        <%= f.text_field(:contact_no, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p> 
+    <p>
+        <%= f.label :username %><br>
+        <%= f.text_field(:username, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p>
+    <p>
+        <%= f.label :password %><br>
+        <%= f.text_field(:password, {:class => 'form-control form-control-sm col-sm-6'}) %>
+    </p>
+    <p>
+        <%= f.submit ({:class => 'btn btn-info btn-sm'}) %><br>
+    </p>
+<% end %>

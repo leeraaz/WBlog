@@ -1,0 +1,36 @@
+
+%header.site-navbar{:role => "banner"}
+  .container-fluid
+    .row.align-items-center
+      .col-12.search-form-wrap.js-search-form
+        %form{:action => "#", :method => "get"}
+          %input#s.form-control{:placeholder => "Search...", :type => "text"}/
+          %button.search-btn{:type => "submit"}
+            %span.icon-search
+      .col-4.site-logo
+        %a.text-black.h2.mb-0{:href => "index.html"} World`s Blog
+      .col-8.text-right
+        %nav.site-navigation{:role => "navigation"}
+          %ul.site-menu.js-clone-nav.mr-auto.d-none.d-lg-block.mb-0
+            %li
+              %a{:href => root_path} Home
+            %li
+              %a{:href => posts_path} Blogs
+            %li
+              %a{:href => new_post_path} Add Post
+            %li
+              %a{:href => about_path} About Us
+            - if !current_user
+              %li
+                %a{:href => new_user_registration_path } Sign up
+              %li
+                %a{:href => new_user_session_path } Sign in
+            - else
+              %li
+                = link_to 'Sign Out', destroy_user_session_path, method: :delete
+                
+            %li.d-none.d-lg-inline-block
+              %a.js-search-toggle{:href => "#"}
+                %span.icon-search
+        %a.site-menu-toggle.js-menu-toggle.text-black.d-inline-block.d-lg-none{:href => "#"}
+          %span.icon-menu.h3

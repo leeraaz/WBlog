@@ -1,0 +1,38 @@
+%nav.navbar.navbar-expand.navbar-dark.bg-dark.static-top
+  %a.navbar-brand.mr-1{:href => "index.html"} Admin Dashboard
+  / Navbar Search
+  %form.d-none.d-md-inline-block.form-inline.ml-auto.mr-0.mr-md-3.my-2.my-md-0
+    .input-group
+      %input.form-control{"aria-describedby" => "basic-addon2", "aria-label" => "Search", :placeholder => "Search for...", :type => "text"}/
+      .input-group-append
+        %button.btn.btn-primary{:type => "button"}
+          %i.fas.fa-search
+  / Navbar
+  %ul.navbar-nav.ml-auto.ml-md-0
+    %li.nav-item.dropdown.no-arrow.mx-1
+      %a#alertsDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+        %i.fas.fa-bell.fa-fw
+        %span.badge.badge-danger 9+
+      .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "alertsDropdown"}
+        %a.dropdown-item{:href => "#"} Action
+        %a.dropdown-item{:href => "#"} Another action
+        .dropdown-divider
+        %a.dropdown-item{:href => "#"} Something else here
+    %li.nav-item.dropdown.no-arrow.mx-1
+      %a#messagesDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+        %i.fas.fa-envelope.fa-fw
+        %span.badge.badge-danger 7
+      .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "messagesDropdown"}
+        %a.dropdown-item{:href => "#"} Action
+        %a.dropdown-item{:href => "#"} Another action
+        .dropdown-divider
+        %a.dropdown-item{:href => "#"} Something else here
+    %li.nav-item.dropdown.no-arrow
+      %a#userDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+        %i.fas.fa-user-circle.fa-fw
+      .dropdown-menu.dropdown-menu-right{"aria-labelledby" => "userDropdown"}
+        %a.dropdown-item{:href => "#"} Settings
+        %a.dropdown-item{:href => "#"} Activity Log
+        .dropdown-divider
+        -# %a.dropdown-item
+        = link_to 'Logout', destroy_admin_session_path, method: :delete,class: "nav nav-link float-left", style: "color: black; margin-left: 5px"

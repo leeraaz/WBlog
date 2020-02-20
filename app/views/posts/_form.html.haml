@@ -1,0 +1,24 @@
+= form_for :post, url: posts_path do |f|
+  - if @post.errors.any?
+    - @post.errors.full_messages.each do |msg|
+      .alert.alert-danger.col-sm-6
+        = msg
+  %p
+    = f.label :title
+    %br/
+    = f.text_field(:title, {:class => 'form-control form-control-sm col-sm-6'})
+  %p
+    = f.label :body
+    %br/
+    = f.trix_editor :body, class: "form-element rounded medium"
+
+    %p
+    = f.label :picture
+    %br/
+    = f.file_field(:picture, {:class => 'form-control form-control-sm col-sm-6'})
+    = f.text_field(:user_id, {:value => current_user.id })
+
+  %p
+    = f.submit ({:class => 'btn btn-info btn-sm'})
+    %br/
+  

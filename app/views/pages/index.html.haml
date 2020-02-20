@@ -1,0 +1,104 @@
+
+.site-section.bg-light
+  .container
+    .row.align-items-stretch.retro-layout-2
+      -# - @blogs.each do |blog|
+      .col-md-4
+        %a.h-entry.mb-30.v-height.gradient{:href => "single.html", :style => "background-image: url('assets/blog1.jpg');"}
+          .text
+            %h2 Write your own Blog
+            %span.date July 19, 2019
+        %a.h-entry.v-height.gradient{:href => "single.html", :style => "background-image: url('assets/blog.jpg');"}
+          .text
+            %h2 Connect with the world
+            %span.date July 19, 2019
+      .col-md-4
+        %a.h-entry.img-5.h-100.gradient{:href => "single.html", :style => "background-image: url('assets/blog3.jpg');"}
+          .text
+            -# .post-categories.mb-3
+            -#   %span.post-category.bg-danger Travel
+            -#   %span.post-category.bg-primary Food
+            %h2 Share your Ideas and Experiences
+            %span.date July 19, 2019
+      .col-md-4
+        %a.h-entry.mb-30.v-height.gradient{:href => "single.html", :style => "background-image: url('assets/blog5.jpg');"}
+          .text
+            %h2 You can make it happen
+            %span.date July 19, 2019
+        %a.h-entry.v-height.gradient{:href => "single.html", :style => "background-image: url('assets/blog2.jpg');"}
+          .text
+            %h2 Get and Share free knowledge you have.
+            %span.date July 19, 2019
+.site-section
+  .container
+    .row.mb-5
+      .col-12
+        %h2 Recent Posts
+    .row
+      -latest_six_blog.each do |blog|
+        .col-lg-4.mb-4
+          .entry2
+            %a{:href => "/posts/#{blog.id}"}
+              %img.img-fluid.rounded{:alt => "Image", :src => blog_image(blog)}/
+            .excerpt
+              %span.post-category.text-white.bg-secondary.mb-3 Politics
+              %h2
+                %a{:href => "/posts/#{blog.id}"}
+                  = blog.title
+              .post-meta.align-items-center.text-left.clearfix
+                %figure.author-figure.mb-0.mr-3.float-left
+                  %img.img-fluid{:alt => "Image", :src => avatar_user(blog.user)}/
+                %span.d-inline-block.mt-1
+                  By
+                  %a{:href => "#"} 
+                    = blog.user.username
+                %span  -  July 19, 2019
+              %p 
+                = blog.body.html_safe if blog.body.present?
+              %p
+                %a{:href => "/posts/#{blog.id}"} Read More
+    .row.text-center.pt-5.border-top
+      .col-md-12
+        .custom-pagination
+          %span 1
+          %a{:href => "#"} 2
+          %a{:href => "#"} 3
+          %a{:href => "#"} 4
+          %span ...
+          %a{:href => "#"} 15
+-# .site-section.bg-light
+-#   .container
+-#     .row.align-items-stretch.retro-layout
+-#       .col-md-5.order-md-2
+-#         %a.hentry.img-1.h-100.gradient{:href => "single.html", :style => "background-image: url('images/img_4.jpg');"}
+-#           %span.post-category.text-white.bg-danger Travel
+-#           .text
+-#             %h2 The 20 Biggest Fintech Companies In America 2019
+-#             %span February 12, 2019
+-#       .col-md-7
+-#         %a.hentry.img-2.v-height.mb30.gradient{:href => "single.html", :style => "background-image: url('images/img_1.jpg');"}
+-#           %span.post-category.text-white.bg-success Nature
+-#           .text.text-sm
+-#             %h2 The 20 Biggest Fintech Companies In America 2019
+-#             %span February 12, 2019
+-#         .two-col.d-block.d-md-flex
+-#           %a.hentry.v-height.img-2.gradient{:href => "single.html", :style => "background-image: url('images/img_2.jpg');"}
+-#             %span.post-category.text-white.bg-primary Sports
+-#             .text.text-sm
+-#               %h2 The 20 Biggest Fintech Companies In America 2019
+-#               %span February 12, 2019
+-#           %a.hentry.v-height.img-2.ml-auto.gradient{:href => "single.html", :style => "background-image: url('images/img_3.jpg');"}
+-#             %span.post-category.text-white.bg-warning Lifestyle
+-#             .text.text-sm
+-#               %h2 The 20 Biggest Fintech Companies In America 2019
+-#               %span February 12, 2019
+-# .site-section.bg-lightx
+-#   .container
+-#     .row.justify-content-center.text-center
+-#       .col-md-5
+-#         .subscribe-1
+-#           %h2 Subscribe to our newsletter
+-#           %p.mb-5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nesciunt error illum a explicabo, ipsam nostrum.
+-#           %form.d-flex{:action => "#"}
+-#             %input.form-control{:placeholder => "Enter your email address", :type => "text"}/
+-#             %input.btn.btn-primary{:type => "submit", :value => "Subscribe"}
