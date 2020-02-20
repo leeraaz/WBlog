@@ -1,0 +1,94 @@
+{
+  "application.js": "/packs/js/application-11bb0480fb0f77e1db30.js",
+  "application.js.map": "/packs/js/application-11bb0480fb0f77e1db30.js.map",
+  "categories/category.js": "/packs/js/categories/category-e99cd5e2b20df4f724ca.js",
+  "categories/category.js.map": "/packs/js/categories/category-e99cd5e2b20df4f724ca.js.map",
+  "categories/categoryModule.js": "/packs/js/categories/categoryModule-230a0defc792b36c98a8.js",
+  "categories/categoryModule.js.map": "/packs/js/categories/categoryModule-230a0defc792b36c98a8.js.map",
+  "countertest/counterModule.js": "/packs/js/countertest/counterModule-1537555b2477ae357d1d.js",
+  "countertest/counterModule.js.map": "/packs/js/countertest/counterModule-1537555b2477ae357d1d.js.map",
+  "countertest/counterTeset.js": "/packs/js/countertest/counterTeset-8821bfb8353ef8a8f845.js",
+  "countertest/counterTeset.js.map": "/packs/js/countertest/counterTeset-8821bfb8353ef8a8f845.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-11bb0480fb0f77e1db30.js"
+      ],
+      "js.map": [
+        "/packs/js/application-11bb0480fb0f77e1db30.js.map"
+      ]
+    },
+    "categories/category": {
+      "js": [
+        "/packs/js/categories/category-e99cd5e2b20df4f724ca.js"
+      ],
+      "js.map": [
+        "/packs/js/categories/category-e99cd5e2b20df4f724ca.js.map"
+      ]
+    },
+    "categories/categoryModule": {
+      "js": [
+        "/packs/js/categories/categoryModule-230a0defc792b36c98a8.js"
+      ],
+      "js.map": [
+        "/packs/js/categories/categoryModule-230a0defc792b36c98a8.js.map"
+      ]
+    },
+    "countertest/counterModule": {
+      "js": [
+        "/packs/js/countertest/counterModule-1537555b2477ae357d1d.js"
+      ],
+      "js.map": [
+        "/packs/js/countertest/counterModule-1537555b2477ae357d1d.js.map"
+      ]
+    },
+    "countertest/counterTeset": {
+      "js": [
+        "/packs/js/countertest/counterTeset-8821bfb8353ef8a8f845.js"
+      ],
+      "js.map": [
+        "/packs/js/countertest/counterTeset-8821bfb8353ef8a8f845.js.map"
+      ]
+    },
+    "hello_vue": {
+      "js": [
+        "/packs/js/hello_vue-5068551f910548a23020.js"
+      ],
+      "js.map": [
+        "/packs/js/hello_vue-5068551f910548a23020.js.map"
+      ]
+    },
+    "jesttesting/AddTodoForm": {
+      "js": [
+        "/packs/js/jesttesting/AddTodoForm-1b71a3d59399fd20f647.js"
+      ],
+      "js.map": [
+        "/packs/js/jesttesting/AddTodoForm-1b71a3d59399fd20f647.js.map"
+      ]
+    },
+    "jesttesting/jesttesting": {
+      "js": [
+        "/packs/js/jesttesting/jesttesting-4a483aa22d75aa5ab2ec.js"
+      ],
+      "js.map": [
+        "/packs/js/jesttesting/jesttesting-4a483aa22d75aa5ab2ec.js.map"
+      ]
+    },
+    "jesttesting/TodoList": {
+      "js": [
+        "/packs/js/jesttesting/TodoList-5278dcfa4297e2dac3ce.js"
+      ],
+      "js.map": [
+        "/packs/js/jesttesting/TodoList-5278dcfa4297e2dac3ce.js.map"
+      ]
+    }
+  },
+  "hello_vue.js": "/packs/js/hello_vue-5068551f910548a23020.js",
+  "hello_vue.js.map": "/packs/js/hello_vue-5068551f910548a23020.js.map",
+  "jesttesting/AddTodoForm.js": "/packs/js/jesttesting/AddTodoForm-1b71a3d59399fd20f647.js",
+  "jesttesting/AddTodoForm.js.map": "/packs/js/jesttesting/AddTodoForm-1b71a3d59399fd20f647.js.map",
+  "jesttesting/TodoList.js": "/packs/js/jesttesting/TodoList-5278dcfa4297e2dac3ce.js",
+  "jesttesting/TodoList.js.map": "/packs/js/jesttesting/TodoList-5278dcfa4297e2dac3ce.js.map",
+  "jesttesting/jesttesting.js": "/packs/js/jesttesting/jesttesting-4a483aa22d75aa5ab2ec.js",
+  "jesttesting/jesttesting.js.map": "/packs/js/jesttesting/jesttesting-4a483aa22d75aa5ab2ec.js.map"
+}

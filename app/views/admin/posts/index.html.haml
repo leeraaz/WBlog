@@ -1,0 +1,27 @@
+Here goes the blogs
+.card.mb-3
+  .card-header
+    %i.fas.fa-table
+    Data Table Example
+  .card-body
+    .table-responsive
+      %table#dataTable.table.table-bordered{:cellspacing => "0", :width => "100%"}
+        %thead
+          %tr
+            %th ID
+            %th Title
+            %th Content
+            %th Created at
+            %th Created by
+            %th Action
+        %tbody
+          - @blogs.each do |blog|
+            %tr
+              %td #{blog.id}
+              %td #{blog.title}
+              %td #{blog.body.html_safe if blog.body.present?}
+              %td #{blog.created_at}
+              %td #{blog.user.username}
+              %td
+                = link_to 'View', admin_post_path(blog), style: "color: black"
+  .card-footer.small.text-muted Updated yesterday at 11:59 PM

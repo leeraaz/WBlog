@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default {\n  about: true\n};","map":{"version":3,"sources":["/home/banba/projects/Blog/app/javascript/about/index.js"],"names":["about"],"mappings":"AAAA,eAAe;AAACA,EAAAA,KAAK,EAAE;AAAR,CAAf","sourcesContent":["export default {about: true}"]},"metadata":{},"sourceType":"module"}

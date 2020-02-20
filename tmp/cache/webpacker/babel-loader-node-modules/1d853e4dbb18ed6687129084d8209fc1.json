@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default {\n  myVue: true\n};","map":{"version":3,"sources":["/home/banba/projects/Blog/app/javascript/myVue/index.js"],"names":["myVue"],"mappings":"AAAA,eAAe;AAAEA,EAAAA,KAAK,EAAE;AAAT,CAAf","sourcesContent":["export default { myVue: true }\n"]},"metadata":{},"sourceType":"module"}

@@ -1,0 +1,14 @@
+<h1>Login</h1>
+
+
+
+<%= form_for :post, url: posts_path do |f| %>
+	<p>
+		<%= f.text_field(:title, {:class => 'form-control form-control-sm col-sm-6'}) %>
+	</p>
+	<p>
+		<%= f.text_field(:body, {:class => 'form-control form-control-sm col-sm-6'}) %>
+	</p>
+		<%= f.submit ({:class => 'btn btn-info btn-sm'}) %><br>
+	</p>
+<% end %>

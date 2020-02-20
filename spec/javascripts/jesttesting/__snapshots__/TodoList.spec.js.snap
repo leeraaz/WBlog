@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TodoList should render to a snapshot when list has items 1`] = `
+<div
+  class="todo-list"
+>
+  <ul>
+    <li>
+      Todo #1
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`TodoList should render to a snapshot when list is empty 1`] = `
+<div
+  class="todo-list"
+>
+  <div>
+    You have nothing else to do :(
+  </div>
+</div>
+`;
